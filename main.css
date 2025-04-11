@@ -16,6 +16,13 @@ body {
     margin: 0px;
 }
 
+
+.centered-text-container {
+  margin:auto;
+  width: 50%;
+  font-size: larger;
+}
+
 .fb-container-container {
   display:flex;
   width:100%;
