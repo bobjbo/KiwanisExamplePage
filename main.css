@@ -16,6 +16,10 @@ body {
     margin: 0px;
 }
 
+p {
+  font-size: larger; 
+  text-align: center;
+}
 
 .centered-text-container {
   margin:auto;
@@ -79,11 +83,11 @@ body {
 .headerBar {
     display: block;
     background-color:floralwhite;
-    margin-top: -0.75vw;
+    margin-top: -0.6vw;
 
-    height: 75%;
+    height: 10vh;
     width: 100%;
-    padding: 25px;
+    padding: 1%;
 
     text-align: center;
     color:black;
@@ -91,47 +95,62 @@ body {
 }
 
 .headerDefault {
-    color: black;
-    background-color: rgb(235, 230, 220);
-    border: 0px;
-    border-radius: 5px;
-    height: 3vw;
-    width: 8vw;
-    margin-top: 0.75vw;
-    margin-bottom: -5px;
-    font-size: 0.75vw;
+  display: block;
+  float: left;
+  width: 75%;
+  margin: -.4vh -25vw 1vh -0.5vw;
+  max-width: 900px;
 }
 
-.headerDefault:hover {
+
+.headerDefault a {
+  display: inline-block;
+  background-color: rgb(235, 230, 220);
+  color: black;
+  padding: 0.75%;
+  border: 0px;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size: 0.675vw;
+  width: 11.5%;
+  margin: 0px;
+}
+
+.specialHeader {
+  display: block;
+  float: right;
+  width: 25%;
+  margin: -.4vh -1vw 1vh 0vw;
+}
+
+.specialHeader a {
+  display: inline-block;
+  background-color: blue;
+  color: floralwhite;
+  padding: 2.5%;
+  border: 0px;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size: 0.85vw;
+  width: 10vw;
+  margin: 0px;
+}
+
+.specialHeader a:hover {
+  background-color: rgb(0, 0, 87);
+}
+
+.headerDefault a:hover {
   background-color: rgb(86, 243, 248);
 }
 
 .headerIcon {
     display: block;
-    width: 5%;
-    height: 5%;
-    margin-bottom: -70px;
-    margin-top: -5px;
-    margin-left: -10px;
+    height: 7vh;
+    float: left;
+    margin-top: -.5vh;
 }
 
-.signin {
-    color: floralwhite;
-    background-color: blue;
-    border: 0px;
-    border-radius: 5px;
-    height: 3vw;
-    width: 8vw;
-    float: right;
-    margin-right: 40px;
-    margin-top: 10px;
-    margin-bottom: -5px;
-    font-size: 0.75vw;
-}
-
-.signin:hover {
-  background-color: rgb(0, 0, 87);
-}
 
 .lrg {
     font-size: 25px;
@@ -270,4 +289,48 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+.mobile-bar {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  .headerBar {
+    height: 18vw;
+  }
+  .headerDefault {
+    display: none;
+  }
+  .specialHeader {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+  .specialHeader a {
+    display: inline-block;
+    background-color: blue;
+    color: floralwhite;
+    padding: 2.5%;
+    border: 0px;
+    border-radius: 5%;
+    text-decoration: none;
+    font-size: 1.5vw;
+    width: 25%;
+    margin-top: -5+1vw;
+  }
+  .headerIcon {
+    float: left;
+    margin-top: 0vh;
+    height: 12.5vh;
+  }
+  .mobile-bar {
+    display: inline-block;
+    margin: auto;
+    width: 75%;
+    font-size: 5vw;
+  }
 }
